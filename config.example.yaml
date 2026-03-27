@@ -1,0 +1,32 @@
+app:
+  mode: dry-run
+  timezone: "Asia/Seoul"
+  currency: "KRW"
+  daily_budget_krw: 1000000
+
+sourcing:
+  preferred_sites:
+    - ownerclan
+    - dometopia
+  max_candidates: 30
+
+pricing:
+  target_gross_margin_pct: 30
+  platform_fee_pct:
+    smartstore: 6
+    coupang: 10
+  settlement_fee_pct: 2.5
+  advertising_fee_pct: 3
+  shipping_cost_krw: 3500
+
+moq:
+  max_moq: 10
+  risk_weight: 1.2
+
+approval:
+  require_manual_approval: true
+
+telegram:
+  enabled: false
+  bot_token: ""
+  chat_id: ""
